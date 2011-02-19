@@ -13,4 +13,5 @@
     <string name="menu_delete">Delete Device</string>
     <string name="wake">Wake up device</string>
     <string name="edit">Edit Settings</string>
+        <string name="details">Should be seeing device info..not this</string>
 </resources>

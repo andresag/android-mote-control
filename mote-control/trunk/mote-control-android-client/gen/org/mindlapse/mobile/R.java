@@ -17,12 +17,13 @@ public final class R {
         public static final int bcaddr=0x7f050002;
         public static final int cat=0x7f050004;
         public static final int confirm=0x7f050005;
-        public static final int edit=0x7f050008;
+        public static final int details=0x7f050007;
+        public static final int edit=0x7f050009;
         public static final int ipaddr=0x7f050001;
         public static final int mac=0x7f050003;
         public static final int name=0x7f050000;
         public static final int text1=0x7f050006;
-        public static final int wake=0x7f050007;
+        public static final int wake=0x7f050008;
     }
     public static final class layout {
         public static final int device_edit=0x7f030000;
@@ -35,6 +36,7 @@ public final class R {
         public static final int bcaddr=0x7f040006;
         public static final int cat=0x7f040007;
         public static final int confirm=0x7f040008;
+        public static final int details=0x7f04000d;
         public static final int device_list=0x7f040001;
         public static final int edit=0x7f04000c;
         public static final int ipaddr=0x7f040004;
