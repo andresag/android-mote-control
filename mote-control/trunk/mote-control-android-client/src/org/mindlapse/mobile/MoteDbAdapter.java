@@ -45,7 +45,7 @@ public class MoteDbAdapter {
      */
     private static final String DATABASE_CREATE =
         "create table device (_id integer primary key autoincrement, "
-        + "name text not null, ipaddr text not null, mac text , bcaddr text , cat text);";
+        + "name text not null, ipaddr text not null, mac text not null , bcaddr text not null, cat text not null);";
 
     private static final String DATABASE_NAME = "data";
     private static final String DATABASE_TABLE = "device";

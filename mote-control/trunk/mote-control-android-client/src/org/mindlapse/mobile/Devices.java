@@ -100,7 +100,13 @@ public class Devices extends ListActivity {
                 c.getColumnIndexOrThrow(MoteDbAdapter.KEY_NAME)));
         i.putExtra(MoteDbAdapter.KEY_IPADDR, c.getString(
                 c.getColumnIndexOrThrow(MoteDbAdapter.KEY_IPADDR)));
-        startActivityForResult(i, ACTIVITY_EDIT);
+        i.putExtra(MoteDbAdapter.KEY_BCADDR, c.getString(
+                c.getColumnIndexOrThrow(MoteDbAdapter.KEY_BCADDR)));
+        i.putExtra(MoteDbAdapter.KEY_MAC, c.getString(
+                c.getColumnIndexOrThrow(MoteDbAdapter.KEY_MAC)));
+        i.putExtra(MoteDbAdapter.KEY_CAT, c.getString(
+                c.getColumnIndexOrThrow(MoteDbAdapter.KEY_CAT)));
+        startActivityForResult(i, ACTIVITY_VIEW);
         
     }
     
