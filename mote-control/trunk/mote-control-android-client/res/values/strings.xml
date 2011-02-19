@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="no_devices">no devices have been added</string>
+    <string name="device_list">Device List</string>
+    <string name="app_name">MoteControl</string>
+    <string name="name">Device Name</string>
+    <string name="ipaddr">IP Address</string>
+    <string name="mac">MAC Address</string>
+    <string name="bcaddr">Broadcast Address</string>
+    <string name="cat">Category</string>
+    <string name="confirm">Save</string>
+    <string name="menu_insert">Add Device</string>
+    <string name="menu_delete">Delete Device</string>
+    <string name="wake">Wake up device</string>
+    <string name="edit">Edit Settings</string>
+</resources>
