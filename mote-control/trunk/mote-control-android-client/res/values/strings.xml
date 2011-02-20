@@ -12,6 +12,8 @@
     <string name="menu_insert">Add Device</string>
     <string name="menu_delete">Delete Device</string>
     <string name="wake">Wake up device</string>
-    <string name="edit">Edit Settings</string>
+    <string name="sleep">Sleep</string>
+    <string name="edit">Return to device list</string>
+    <string name="list">Return to device list</string>
         <string name="details">Should be seeing device info..not this</string>
 </resources>

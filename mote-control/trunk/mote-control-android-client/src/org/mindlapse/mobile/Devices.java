@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
+import android.widget.AdapterView.AdapterContextMenuInfo;
 
 public class Devices extends ListActivity {
 	
@@ -68,6 +69,18 @@ public class Devices extends ListActivity {
 	    menu.add(0, DELETE_ID, 0, R.string.menu_delete);
 
         // TODO: fill in rest of method
+	}
+    @Override
+	public boolean onContextItemSelected(MenuItem item) {
+        switch(item.getItemId()) {
+        case DELETE_ID:
+            AdapterContextMenuInfo info = (AdapterContextMenuInfo) item.getMenuInfo();
+            dbConn.deleteDevice(info.id);
+            fillData();
+            return true;
+        }
+        return super.onContextItemSelected(item);
+
 	}
     
     

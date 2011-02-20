@@ -8,15 +8,22 @@
 	  	<TextView android:id="@+id/details"
           android:layout_width="wrap_content"
         	android:layout_height="wrap_content"
+        	android:textSize="22sp"
         	android:text="@string/details"/>
 	<Button android:id="@+id/wake" 
 	  android:text="@string/wake"
-		android:layout_width="wrap_content"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+		
+	<Button android:id="@+id/sleep" 
+	  android:text="@string/sleep"
+		android:layout_width="fill_parent"
 		android:layout_height="wrap_content" />
 		
 	<Button android:id="@+id/edit" 
 	  android:text="@string/edit"
-		android:layout_width="wrap_content"
+		
+		android:layout_width="fill_parent"
 		android:layout_height="wrap_content" />
 
 </LinearLayout>
