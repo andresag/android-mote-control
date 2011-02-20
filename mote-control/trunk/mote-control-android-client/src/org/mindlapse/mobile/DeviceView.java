@@ -5,6 +5,7 @@ package org.mindlapse.mobile;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -28,6 +29,7 @@ public class DeviceView extends Activity {
 		setContentView(R.layout.device_view);
 		//setTitle(R.string.edit_device);
 		Button wakeButton = (Button) findViewById(R.id.wake);
+		Button sleepButton = (Button) findViewById(R.id.sleep);
 		Button editButton = (Button) findViewById(R.id.edit);
 		TextView textView = (TextView) findViewById(R.id.details);
 
@@ -51,6 +53,7 @@ public class DeviceView extends Activity {
 
 		}
 		
+		
 		wakeButton.setOnClickListener(new View.OnClickListener() {
 
 		    public void onClick(View view) {
@@ -67,6 +70,51 @@ public class DeviceView extends Activity {
 		    }
 		});
 		
+		sleepButton.setOnClickListener(new View.OnClickListener() {
+
+		    public void onClick(View view) {
+		        System.out.println("Sleep time...............................................................................");
+		        Bundle bundle = new Bundle();
+		        RunCommand run = new RunCommand();
+		        run.start(ipaddr, "SLEEP");
+		    	Intent mIntent = new Intent();
+		    	mIntent.putExtras(bundle);
+		    	setResult(RESULT_OK, mIntent);
+		    	finish();
+
+		    	
+		    }
+		});
+		
+		editButton.setOnClickListener(new View.OnClickListener() {
+
+		    public void onClick(View view) {
+		        System.out.println("nothing time...............................................................................");
+		        Bundle bundle = new Bundle();
+		    	Intent mIntent = new Intent();
+		    	mIntent.putExtras(bundle);
+		    	setResult(RESULT_OK, mIntent);
+		    	finish();
+
+		    	
+		    }
+		});
+		
+	}
+	
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event)  {
+	    if (keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) {
+	    	 System.out.println("nothing time...............................................................................");
+		        Bundle bundle = new Bundle();
+		    	Intent mIntent = new Intent();
+		    	mIntent.putExtras(bundle);
+		    	setResult(RESULT_OK, mIntent);
+		    	finish();
+	        return true;
+	    }
+
+	    return super.onKeyDown(keyCode, event);
 	}
 	
 }
