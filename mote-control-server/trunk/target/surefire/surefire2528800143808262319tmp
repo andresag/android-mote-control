@@ -1,0 +1,5 @@
+#surefire
+#Sat Feb 19 22:15:09 CST 2011
+user.dir=/home/bkusenda/workspace/mote-control-server
+localRepository=/home/bkusenda/.m2/repository
+basedir=/home/bkusenda/workspace/mote-control-server
